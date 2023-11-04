@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="main-page-body">
+
+    <main id="hero-page">
+        <!-- Section to display information about the user -->
+        <section class="about">
+            <h1>IP Address:<span class="ip-add"></span></h1>
+            <div class="about-r-1">
+                <p id="lat">Lat: <span></span></p>
+                <p>City: <span></span></p>
+                <p>Organisation: <span></span></p>
+            </div>
+            <div class="about-r-2">
+                <p>Long: <span></span></p>
+                <p>Region: <span></span></p>
+                <p>Hostname: <span></span></p>
+            </div>
+        </section>
+
+        <!-- Section to display a map of the user's current location -->
+        <section class="map-container">
+            <h2>Your current Location</h2>
+            <div class="map"></div>
+        </section>
+
+        <!-- Section to display more information about the user -->
+        <section class="more-info">
+            <h3>More Information About You</h3>
+            <p>Time Zone: <span></span></p>
+            <p>Date And Time: <span></span></p>
+            <p>Pincode: <span></span></p>
+            <p>Message: Number of pincode found: <span>21</span></p>
+        </section>
+
+        <!-- Section to display post offices near the user and a search input -->
+        <section class="postofice-cards">
+            <h1>Post offices Near you</h1>
+            <div class="search-container">
+                <!-- Search icon -->
+                <i class="fa fa-search search-icon"></i>
+                <input type="text" id="post-ofc-search" placeholder="Search By Name">
+            </div>
+            <div class="card-container">
+            </div>
+        </section>
+    </main>
+
+
+    <div class="loader-section" id="loader-sec">
+
+        <div class="loaders" id="loader">
+            <div class="spinner">
+                <div class="sk-folding-cube">
+                    <div class="sk-cube1 sk-cube"></div>
+                    <div class="sk-cube2 sk-cube"></div>
+                    <div class="sk-cube4 sk-cube"></div>
+                    <div class="sk-cube3 sk-cube"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Include your JavaScript file -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
